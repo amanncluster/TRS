@@ -1,0 +1,83 @@
+Backend                                                                                                                                                                                     
+   | 
+   |>>=/node_modules
+   |>>=/models
+   |>>=/controllers
+   |>>=/routes
+   |>>=/index.js
+   |>>=/database.js
+   |>>=/library------
+   |                |
+   |                |>>=/helper.js
+   |
+   |
+   |>>=/package.json
+   |>>=/package-lock.json   
+                        
+ Frontend
+     |>>=/node modules
+     |>>=/public
+     |>>=src
+              |>>=/components
+              |>>=/pages
+              |>>=/app.js
+              |>>=/index.js
+              |>>=/package.json
+              |>>=/package-lock.json
+
+**For backend structure:
+
+1.Go to official website of visual studio code and setup will be downloaded.
+2.Go to the node.js website , also download long term service(LTS)_,simple install node.js.then go command prompt write [node -v](we see the version)
+also here we see package manager also downloaded...so here we write[npm -v](we see the package manager version)..
+3.For react app install we take help from package write command prompt[ npm install create-react-app--global]
+{for here writing global we can created react app anywhere in my system}..
+4.Then i go to desktop ..create a folder MERN..then i go to mern folder and create a folder name test,inside this we create another folder name backend
+also created another folder frontend...
+5.Now open our backend folder with any code editor(like visual  studio)..
+6.Then in vs code we create new file index.js...
+7.Then we go new terminal  and write here [npm init -y]{for this code convert this folder or package in node js package.}
+8.Then again we go new terminal and write here [npm i express]{after express install we can see a node modules create in folder automatically,also
+created package lock json file,we see here list dependency of dependency}
+9.Then in the index.js file we will write 'const express = require("express");{we want to express from express package.we write code in this way in this file.}
+10.Then we create database.js file for database configuration..
+11.We make folders for controllers,then routes,then models and then create library folder and then create a file inside it helper.js.....this is our backend 
+project consisting of express and node...
+12.To connect MongoDB or perform the operation of MongoDB,we use Mongoose package...for this we write in terminal[ npm i mongoose]{this code help us connectivity 
+with MongoDB and helps in creating schema.
+
+**For frontend structure:
+
+13.Again we open fronted folder with visual studio code then we go to new terminal create-react-app .{then here we see many folders in installed automatically}
+14.We go to index.html and write in terminal [npm start] {Then our frontend project will start running on localhost:3000}
+In this way we setup our fornted and backent setup..
+
+**For Reactjs and Nodejs in one terminal(concurrently):
+
+1.For this at first go to new terminal write[npm init -y]{we see automatically created a packet.json file}
+2.we need concurrent package for this at first we go browser and type [concurrently npm] and we find this package and copy a command[npm i concurrently] 
+then go new terminal and paste there that command.{then automatically downloaded concurrently package}
+3.Then in package.json we have to make 2 scripts 1 script name will be "frontend" : "cd frontend && npm start" and other script name will be "backend" : ""cd backend && npm start",
+then we create another script "start": "concurrently \"npm run frontend\" \"npm run backend\""
+we go backend folder and in package.json we create a script "start":  "nodemon index"{nodemon is a package at 1st we need to install it globally where from file server always restart.
+4.then we go to backend folder in index.js file we write simple code 
+app.listen(
+    5000,
+    () => console.log("backend is running")
+)
+5.Then we go to terminal  and simply write[npm run start]{then we see backend is running and fronted also runnning}
+
+**For database connection with mongodb:
+
+1.Go browser and type mongodb.com and create a acccount follow step by step.change ip address 0.0.0.0
+
+user name:amanncluster              
+password:s0maliha                                                                                                                                
+connection string:mongodb+srv://amanncluster:<password>@amann.pqpstfv.mongodb.net/?retryWrites=true&w=majority&appName=Amann
+
+2.Create a folder  first and open with visual stuio and open new terminal write [npm init -y] in terminal also write [npm i mongoose]
+then go to browser and write mongoose npm package                                                                                                                                                                                                            
+
+
+                                                                       
+  
